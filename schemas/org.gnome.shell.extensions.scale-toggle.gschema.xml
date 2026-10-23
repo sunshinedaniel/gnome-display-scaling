@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.scale-toggle" path="/org/gnome/shell/extensions/scale-toggle/">
+    <key name="preferred-scale" type="d">
+      <default>2.0</default>
+      <range min="1.0" max="8.0"/>
+      <summary>Scale used when the tile is on</summary>
+      <description>Remembered independently of the off state, which always uses 100%.</description>
+    </key>
+  </schema>
+</schemalist>

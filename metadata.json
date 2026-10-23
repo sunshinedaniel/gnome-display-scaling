@@ -1,0 +1,8 @@
+{
+  "uuid": "scale-toggle@local.daniel",
+  "name": "Display Scaling",
+  "description": "A Quick Settings split button: off is 100%; on uses the scale selected in the submenu.",
+  "shell-version": ["51"],
+  "settings-schema": "org.gnome.shell.extensions.scale-toggle",
+  "version": 1
+}
