@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# vi translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: vi\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Scaling"
+msgstr "Tỷ lệ"
+
+msgid "Reading display..."
+msgstr "Đang đọc thông tin màn hình..."
+
+msgid "Choose display scale"
+msgstr "Chọn tỷ lệ màn hình"
+
+msgid "Display Scale Toggle"
+msgstr "Chuyển đổi tỷ lệ màn hình"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "Tắt: %s"
+
+msgid "Display unavailable"
+msgstr "Màn hình không khả dụng"
+
+msgid "Applying..."
+msgstr "Đang áp dụng..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "Tắt: %s  |  Bật: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "Chế độ màn hình này không hỗ trợ tỷ lệ 100% cần thiết khi tắt."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "Màn hình báo %s thay vì %s."
+
+msgid "Could not change display scaling"
+msgstr "Không thể thay đổi tỷ lệ màn hình"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "Nút này hỗ trợ một màn hình đang hoạt động hoặc một nhóm màn hình phản chiếu. Với màn hình nền mở rộng, hãy dùng phần cài đặt Màn hình."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "Màn hình %s không còn được kết nối."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "Không thể xác định chế độ hiện tại của %s."
+
+msgid "No active display is available."
+msgstr "Không có màn hình đang hoạt động."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "Chế độ màn hình hiện tại không hỗ trợ %s."

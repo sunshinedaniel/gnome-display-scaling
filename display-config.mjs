@@ -1,26 +1,33 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 export const sameScale = (left, right) => Math.abs(left - right) < 0.0001;
 export const percent = scale => `${Math.round(scale * 100)}%`;
 
-export function describeState(raw) {
+function untranslated(message, ...args) {
+    let index = 0;
+    return message.replace(/%s/g, () => String(args[index++]));
+}
+
+export function describeState(raw, translate = untranslated) {
     const [serial, monitors, logicalMonitors, properties] = raw;
     if (logicalMonitors.length !== 1)
-        throw new Error('This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops.');
+        throw new Error(translate('This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops.'));
 
     const [x, y, scale, transform, primary, specs] = logicalMonitors[0];
     const displays = specs.map(spec => {
         const monitor = monitors.find(([candidate]) =>
             candidate.every((part, index) => part === spec[index]));
         if (!monitor)
-            throw new Error(`Display ${spec[0]} is no longer connected.`);
+            throw new Error(translate('Display %s is no longer connected.', spec[0]));
 
         const [, modes, monitorProperties] = monitor;
         const mode = modes.find(candidate => candidate[6]['is-current']);
         if (!mode)
-            throw new Error(`Cannot determine the current mode of ${spec[0]}.`);
+            throw new Error(translate('Cannot determine the current mode of %s.', spec[0]));
         return {spec, mode, properties: monitorProperties};
     });
     if (!displays.length)
-        throw new Error('No active display is available.');
+        throw new Error(translate('No active display is available.'));
 
     const scales = displays[0].mode[5]
         .filter(candidate => candidate >= 1 && displays.every(display =>
@@ -33,10 +40,10 @@ export function describeState(raw) {
     return {serial, displays, properties, leasedDisplays, x, y, scale, transform, primary, scales};
 }
 
-export function buildConfiguration(state, requestedScale) {
+export function buildConfiguration(state, requestedScale, translate = untranslated) {
     const scale = state.scales.find(candidate => sameScale(candidate, requestedScale));
     if (scale === undefined)
-        throw new Error(`${percent(requestedScale)} is not supported by the current display mode.`);
+        throw new Error(translate('%s is not supported by the current display mode.', percent(requestedScale)));
 
     const monitors = state.displays.map(({spec, mode, properties}) => {
         const options = {};

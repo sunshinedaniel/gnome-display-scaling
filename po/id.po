@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# id translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: id\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Scaling"
+msgstr "Skala"
+
+msgid "Reading display..."
+msgstr "Membaca layar..."
+
+msgid "Choose display scale"
+msgstr "Pilih skala layar"
+
+msgid "Display Scale Toggle"
+msgstr "Pengalih Skala Layar"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "Nonaktif: %s"
+
+msgid "Display unavailable"
+msgstr "Layar tidak tersedia"
+
+msgid "Applying..."
+msgstr "Menerapkan..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "Nonaktif: %s  |  Aktif: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "Mode layar ini tidak mendukung skala 100% yang diperlukan saat dinonaktifkan."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "Layar melaporkan %s, bukan %s."
+
+msgid "Could not change display scaling"
+msgstr "Tidak dapat mengubah skala layar"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "Tombol ini mendukung satu layar aktif atau satu grup layar cermin. Gunakan pengaturan Layar untuk desktop yang diperluas."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "Layar %s tidak lagi terhubung."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "Tidak dapat menentukan mode saat ini untuk %s."
+
+msgid "No active display is available."
+msgstr "Tidak ada layar aktif yang tersedia."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "%s tidak didukung oleh mode layar saat ini."

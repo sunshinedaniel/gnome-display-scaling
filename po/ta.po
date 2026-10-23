@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# ta translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: ta\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Scaling"
+msgstr "அளவாக்கம்"
+
+msgid "Reading display..."
+msgstr "காட்சித் தகவல் படிக்கப்படுகிறது..."
+
+msgid "Choose display scale"
+msgstr "காட்சி அளவைத் தேர்ந்தெடுக்கவும்"
+
+msgid "Display Scale Toggle"
+msgstr "காட்சி அளவு மாற்றி"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "முடக்கம்: %s"
+
+msgid "Display unavailable"
+msgstr "காட்சி கிடைக்கவில்லை"
+
+msgid "Applying..."
+msgstr "பயன்படுத்தப்படுகிறது..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "முடக்கம்: %s  |  இயக்கம்: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "இந்தக் காட்சி முறையில் முடக்கப்பட்ட நிலைக்குத் தேவையான 100% அளவு ஆதரிக்கப்படவில்லை."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "காட்சி %s எனத் தெரிவிக்கிறது; கோரப்பட்ட மதிப்பு %s."
+
+msgid "Could not change display scaling"
+msgstr "காட்சி அளவை மாற்ற முடியவில்லை"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "இந்தப் பொத்தான் ஒரு செயலில் உள்ள காட்சியை அல்லது ஒரு நகலாக்கப்பட்ட காட்சிக் குழுவை ஆதரிக்கிறது. நீட்டிக்கப்பட்ட பணிமேடைகளுக்குக் காட்சி அமைப்புகளைப் பயன்படுத்தவும்."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "%s காட்சி இனி இணைக்கப்படவில்லை."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "%s இன் தற்போதைய காட்சி முறையை அறிய முடியவில்லை."
+
+msgid "No active display is available."
+msgstr "செயலில் உள்ள காட்சி எதுவும் கிடைக்கவில்லை."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "தற்போதைய காட்சி முறையில் %s ஆதரிக்கப்படவில்லை."

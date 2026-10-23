@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# hi translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: hi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Scaling"
+msgstr "स्केलिंग"
+
+msgid "Reading display..."
+msgstr "डिस्प्ले की जानकारी पढ़ी जा रही है..."
+
+msgid "Choose display scale"
+msgstr "डिस्प्ले स्केल चुनें"
+
+msgid "Display Scale Toggle"
+msgstr "डिस्प्ले स्केल बदलें"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "बंद: %s"
+
+msgid "Display unavailable"
+msgstr "डिस्प्ले उपलब्ध नहीं है"
+
+msgid "Applying..."
+msgstr "लागू किया जा रहा है..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "बंद: %s  |  चालू: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "इस डिस्प्ले मोड में बंद स्थिति के लिए आवश्यक 100% स्केल समर्थित नहीं है।"
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "डिस्प्ले %s दिखा रहा है, जबकि अपेक्षित मान %s है।"
+
+msgid "Could not change display scaling"
+msgstr "डिस्प्ले स्केल नहीं बदला जा सका"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "यह बटन एक सक्रिय डिस्प्ले या मिरर किए गए डिस्प्ले के एक समूह का समर्थन करता है। विस्तारित डेस्कटॉप के लिए डिस्प्ले सेटिंग का उपयोग करें।"
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "डिस्प्ले %s अब जुड़ा हुआ नहीं है।"
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "%s का वर्तमान डिस्प्ले मोड निर्धारित नहीं किया जा सका।"
+
+msgid "No active display is available."
+msgstr "कोई सक्रिय डिस्प्ले उपलब्ध नहीं है।"
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "वर्तमान डिस्प्ले मोड में %s समर्थित नहीं है।"

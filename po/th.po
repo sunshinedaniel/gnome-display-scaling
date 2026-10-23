@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# th translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: th\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Scaling"
+msgstr "มาตราส่วน"
+
+msgid "Reading display..."
+msgstr "กำลังอ่านข้อมูลจอแสดงผล..."
+
+msgid "Choose display scale"
+msgstr "เลือกมาตราส่วนจอแสดงผล"
+
+msgid "Display Scale Toggle"
+msgstr "สลับมาตราส่วนจอแสดงผล"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "ปิด: %s"
+
+msgid "Display unavailable"
+msgstr "ไม่สามารถใช้จอแสดงผลได้"
+
+msgid "Applying..."
+msgstr "กำลังใช้การตั้งค่า..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "ปิด: %s  |  เปิด: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "โหมดจอแสดงผลนี้ไม่รองรับมาตราส่วน 100% ที่จำเป็นเมื่อปิด"
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "จอแสดงผลรายงาน %s แทนที่จะเป็น %s"
+
+msgid "Could not change display scaling"
+msgstr "ไม่สามารถเปลี่ยนมาตราส่วนจอแสดงผลได้"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "ปุ่มนี้รองรับจอแสดงผลที่ใช้งานอยู่หนึ่งจอหรือกลุ่มจอแสดงผลแบบสะท้อนหนึ่งกลุ่ม สำหรับเดสก์ท็อปแบบขยาย ให้ใช้การตั้งค่าจอแสดงผล"
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "จอแสดงผล %s ไม่ได้เชื่อมต่อแล้ว"
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "ไม่สามารถระบุโหมดปัจจุบันของ %s ได้"
+
+msgid "No active display is available."
+msgstr "ไม่มีจอแสดงผลที่ใช้งานอยู่"
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "โหมดจอแสดงผลปัจจุบันไม่รองรับ %s"

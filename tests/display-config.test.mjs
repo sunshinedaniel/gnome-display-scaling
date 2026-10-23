@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
 import {buildConfiguration, describeState, sameScale} from '../display-config.mjs';
@@ -80,4 +82,18 @@ test('leased outputs remain leased without being activated', () => {
     const configuration = buildConfiguration(describeState(raw), 2);
     assert.deepEqual(configuration.properties['monitors-for-lease'], [spec]);
     assert.equal(configuration.logicalMonitors[0][5].length, 1);
+});
+
+test('display errors reach the translator with separate interpolation values', () => {
+    const translated = [];
+    const translate = (message, ...args) => {
+        translated.push([message, args]);
+        return 'Translated display error';
+    };
+    const raw = fixture();
+    raw[1][0][1][0][6] = {};
+    assert.throws(() => describeState(raw, translate), /Translated display error/);
+    assert.deepEqual(translated.pop(), ['Cannot determine the current mode of %s.', ['DP-3']]);
+    assert.throws(() => buildConfiguration(describeState(fixture()), 4, translate), /Translated display error/);
+    assert.deepEqual(translated.pop(), ['%s is not supported by the current display mode.', ['400%']]);
 });

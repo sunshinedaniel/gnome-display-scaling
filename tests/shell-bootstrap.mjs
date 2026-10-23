@@ -6,3 +6,4 @@ export function init() {
 export async function run() {
     await new Promise(() => {});
 }
+// SPDX-License-Identifier: GPL-3.0-or-later

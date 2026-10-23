@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# pt translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: pt\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Scaling"
+msgstr "Escala"
+
+msgid "Reading display..."
+msgstr "A ler o ecrã..."
+
+msgid "Choose display scale"
+msgstr "Escolher a escala do ecrã"
+
+msgid "Display Scale Toggle"
+msgstr "Alternar escala do ecrã"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "Desativado: %s"
+
+msgid "Display unavailable"
+msgstr "Ecrã indisponível"
+
+msgid "Applying..."
+msgstr "A aplicar..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "Desativado: %s  |  Ativado: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "Este modo de ecrã não suporta a escala de 100% necessária ao desativar."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "O ecrã indica %s em vez de %s."
+
+msgid "Could not change display scaling"
+msgstr "Não foi possível alterar a escala do ecrã"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "Este botão suporta um ecrã ativo ou um grupo de ecrãs espelhados. Para ambientes de trabalho estendidos, utilize as definições de ecrãs."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "O ecrã %s já não está ligado."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "Não foi possível determinar o modo atual de %s."
+
+msgid "No active display is available."
+msgstr "Não há nenhum ecrã ativo disponível."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "O modo de ecrã atual não suporta %s."

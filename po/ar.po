@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# ar translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Scaling"
+msgstr "التحجيم"
+
+msgid "Reading display..."
+msgstr "جارٍ قراءة إعدادات الشاشة..."
+
+msgid "Choose display scale"
+msgstr "اختيار مقياس العرض"
+
+msgid "Display Scale Toggle"
+msgstr "تبديل مقياس العرض"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "إيقاف: %s"
+
+msgid "Display unavailable"
+msgstr "الشاشة غير متاحة"
+
+msgid "Applying..."
+msgstr "جارٍ التطبيق..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "إيقاف: %s  |  تشغيل: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "وضع العرض هذا لا يدعم مقياس 100% المطلوب عند الإيقاف."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "تشير الشاشة إلى %s بدلاً من %s."
+
+msgid "Could not change display scaling"
+msgstr "تعذّر تغيير مقياس العرض"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "يدعم هذا الزر شاشة نشطة واحدة أو مجموعة شاشات متطابقة. استخدم إعدادات الشاشات لأسطح المكتب الممتدة."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "لم تعد الشاشة %s متصلة."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "تعذّر تحديد وضع العرض الحالي للشاشة %s."
+
+msgid "No active display is available."
+msgstr "لا توجد شاشة نشطة متاحة."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "مقياس %s غير مدعوم في وضع العرض الحالي."

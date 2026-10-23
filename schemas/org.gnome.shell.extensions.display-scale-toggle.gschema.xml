@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <schemalist>
-  <schema id="org.gnome.shell.extensions.scale-toggle" path="/org/gnome/shell/extensions/scale-toggle/">
+  <schema id="org.gnome.shell.extensions.display-scale-toggle" path="/org/gnome/shell/extensions/display-scale-toggle/">
     <key name="preferred-scale" type="d">
       <default>2.0</default>
       <range min="1.0" max="8.0"/>

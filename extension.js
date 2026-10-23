@@ -1,7 +1,9 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 
-import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
+import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import * as QuickSettings from 'resource:///org/gnome/shell/ui/quickSettings.js';
@@ -12,7 +14,11 @@ const BUS_NAME = 'org.gnome.Mutter.DisplayConfig';
 const OBJECT_PATH = '/org/gnome/Mutter/DisplayConfig';
 const ICON = 'video-display-symbolic';
 
-export default class ScaleToggleExtension extends Extension {
+function translate(message, ...args) {
+    return _(message).format(...args);
+}
+
+export default class DisplayScaleToggleExtension extends Extension {
     enable() {
         this._settings = this.getSettings();
         this._cancellable = new Gio.Cancellable();
@@ -21,15 +27,16 @@ export default class ScaleToggleExtension extends Extension {
         this._refreshId = 0;
         this._indicator = new QuickSettings.SystemIndicator();
         this._toggle = new QuickSettings.QuickMenuToggle({
-            title: 'Display Scaling',
-            subtitle: 'Reading display...',
+            title: _('Scaling'),
+            subtitle: _('Reading display...'),
             iconName: ICON,
             toggleMode: false,
-            menuButtonAccessibleName: 'Choose display scale',
+            menuButtonAccessibleName: _('Choose display scale'),
         });
         this._section = new PopupMenu.PopupMenuSection();
         this._toggle.menu.addMenuItem(this._section);
-        this._toggle.menu.setHeader(ICON, 'Display Scaling', 'Off: 100%');
+        this._toggle.menu.setHeader(ICON, _('Display Scale Toggle'),
+            _('Off: %s').format(percent(1)));
         this._toggle.connect('clicked', () => {
             if (!this._state || this._busy)
                 return;
@@ -87,7 +94,7 @@ export default class ScaleToggleExtension extends Extension {
 
     async _readState(cancellable) {
         const result = await this._call('GetCurrentState', null, cancellable);
-        return describeState(result.recursiveUnpack());
+        return describeState(result.recursiveUnpack(), translate);
     }
 
     async _refresh() {
@@ -105,12 +112,12 @@ export default class ScaleToggleExtension extends Extension {
             if (!this._active(cancellable) || refreshId !== this._refreshId)
                 return;
             this._state = null;
-            this._toggle.subtitle = 'Display unavailable';
+            this._toggle.subtitle = _('Display unavailable');
             this._section.removeAll();
             const item = new PopupMenu.PopupMenuItem(error.message, {reactive: false});
             this._section.addMenuItem(item);
             console.error(`[${this.uuid}] Cannot read display configuration: ${error.message}`);
-            Main.notifyError('Display Scaling', error.message);
+            Main.notifyError(_('Display Scale Toggle'), error.message);
         }
     }
 
@@ -118,9 +125,10 @@ export default class ScaleToggleExtension extends Extension {
         const {scale, scales} = this._state;
         const preferred = this._settings.get_double('preferred-scale');
         this._toggle.checked = !sameScale(scale, 1);
-        this._toggle.subtitle = this._busy ? 'Applying...' : percent(scale);
+        this._toggle.subtitle = this._busy ? _('Applying...') : percent(scale);
         this._toggle.menu.setHeader(
-            ICON, 'Display Scaling', `Off: 100%  |  On: ${percent(preferred)}`);
+            ICON, _('Display Scale Toggle'),
+            _('Off: %s  |  On: %s').format(percent(1), percent(preferred)));
         this._section.removeAll();
         for (const candidate of scales.filter(value => !sameScale(value, 1))) {
             const item = new PopupMenu.PopupMenuItem(percent(candidate));
@@ -152,9 +160,9 @@ export default class ScaleToggleExtension extends Extension {
             const state = await this._readState(cancellable);
             if (!this._active(cancellable))
                 return;
-            const configuration = buildConfiguration(state, scale);
+            const configuration = buildConfiguration(state, scale, translate);
             if (!state.scales.some(candidate => sameScale(candidate, 1)))
-                throw new Error('This display mode does not support the required 100% off state.');
+                throw new Error(_('This display mode does not support the required 100% off state.'));
 
             const logicalMonitors = configuration.logicalMonitors.map(logical => [
                 ...logical.slice(0, 5),
@@ -184,7 +192,8 @@ export default class ScaleToggleExtension extends Extension {
             if (!this._active(cancellable))
                 return;
             if (!sameScale(applied.scale, scale))
-                throw new Error(`The display reports ${percent(applied.scale)} instead of ${percent(scale)}.`);
+                throw new Error(_('The display reports %s instead of %s.')
+                    .format(percent(applied.scale), percent(scale)));
             this._state = applied;
             if (!sameScale(scale, 1))
                 this._settings.set_double('preferred-scale', scale);
@@ -192,7 +201,7 @@ export default class ScaleToggleExtension extends Extension {
             if (!this._active(cancellable))
                 return;
             console.error(`[${this.uuid}] Cannot apply display scale: ${error.message}`);
-            Main.notifyError('Could not change display scaling', error.message);
+            Main.notifyError(_('Could not change display scaling'), error.message);
         } finally {
             if (this._active(cancellable)) {
                 this._busy = false;

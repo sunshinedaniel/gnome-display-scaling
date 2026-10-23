@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# ru translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: ru\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "Scaling"
+msgstr "Масштаб"
+
+msgid "Reading display..."
+msgstr "Чтение параметров экрана..."
+
+msgid "Choose display scale"
+msgstr "Выбрать масштаб экрана"
+
+msgid "Display Scale Toggle"
+msgstr "Переключатель масштаба экрана"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "Выключено: %s"
+
+msgid "Display unavailable"
+msgstr "Экран недоступен"
+
+msgid "Applying..."
+msgstr "Применение..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "Выключено: %s  |  Включено: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "Этот режим экрана не поддерживает масштаб 100%, необходимый при выключении."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "Экран сообщает масштаб %s вместо %s."
+
+msgid "Could not change display scaling"
+msgstr "Не удалось изменить масштаб экрана"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "Эта кнопка поддерживает один активный экран или одну группу зеркальных экранов. Для расширенного рабочего стола используйте настройки экранов."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "Экран %s больше не подключён."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "Не удалось определить текущий режим экрана %s."
+
+msgid "No active display is available."
+msgstr "Нет доступного активного экрана."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "Текущий режим экрана не поддерживает %s."

@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# zh_CN translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: zh_CN\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Scaling"
+msgstr "缩放"
+
+msgid "Reading display..."
+msgstr "正在读取显示器信息..."
+
+msgid "Choose display scale"
+msgstr "选择显示缩放比例"
+
+msgid "Display Scale Toggle"
+msgstr "显示缩放切换"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "关闭：%s"
+
+msgid "Display unavailable"
+msgstr "显示器不可用"
+
+msgid "Applying..."
+msgstr "正在应用..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "关闭：%s  |  开启：%s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "当前显示模式不支持关闭时所需的100%缩放比例。"
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "显示器报告的缩放比例为%s，而非%s。"
+
+msgid "Could not change display scaling"
+msgstr "无法更改显示缩放比例"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "此按钮支持一台活动显示器或一组镜像显示器。对于扩展桌面，请使用显示设置。"
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "显示器%s已断开连接。"
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "无法确定%s的当前显示模式。"
+
+msgid "No active display is available."
+msgstr "没有可用的活动显示器。"
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "当前显示模式不支持%s。"

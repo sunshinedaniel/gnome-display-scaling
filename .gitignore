@@ -1,5 +1,6 @@
 *.shell-extension.zip
 schemas/gschemas.compiled
+locale/
 __pycache__/
 *.pyc
 shell-smoke*.log

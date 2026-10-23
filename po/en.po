@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# en translations for Display Scale Toggle.
+# Copyright (C) 2026 Display Scale Toggle contributors
+# Distributed under the same license as this project.
+msgid ""
+msgstr ""
+"Project-Id-Version: Display Scale Toggle 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sunshinedaniel/gnome-display-scaling/issues\n"
+"PO-Revision-Date: 2026-10-23 23:21+0200\n"
+"Last-Translator: Display Scale Toggle contributors\n"
+"Language-Team: en\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Scaling"
+msgstr "Scaling"
+
+msgid "Reading display..."
+msgstr "Reading display..."
+
+msgid "Choose display scale"
+msgstr "Choose display scale"
+
+msgid "Display Scale Toggle"
+msgstr "Display Scale Toggle"
+
+#, javascript-format
+msgid "Off: %s"
+msgstr "Off: %s"
+
+msgid "Display unavailable"
+msgstr "Display unavailable"
+
+msgid "Applying..."
+msgstr "Applying..."
+
+#, javascript-format
+msgid "Off: %s  |  On: %s"
+msgstr "Off: %s  |  On: %s"
+
+msgid "This display mode does not support the required 100% off state."
+msgstr "This display mode does not support the required 100% off state."
+
+#, javascript-format
+msgid "The display reports %s instead of %s."
+msgstr "The display reports %s instead of %s."
+
+msgid "Could not change display scaling"
+msgstr "Could not change display scaling"
+
+msgid "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+msgstr "This tile supports one active display or one mirrored display group. Use Displays settings for extended desktops."
+
+#, javascript-format
+msgid "Display %s is no longer connected."
+msgstr "Display %s is no longer connected."
+
+#, javascript-format
+msgid "Cannot determine the current mode of %s."
+msgstr "Cannot determine the current mode of %s."
+
+msgid "No active display is available."
+msgstr "No active display is available."
+
+#, javascript-format
+msgid "%s is not supported by the current display mode."
+msgstr "%s is not supported by the current display mode."
