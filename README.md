@@ -177,21 +177,6 @@ dbus-run-session --config-file=tests/session-bus.conf -- \
   --language de
 ```
 
-## Publishing on extensions.gnome.org
-
-The packaging command above includes the runtime, schema XML, compiled
-translations, and license. Tests, translation sources, screenshots, development
-automation, and this README stay in the repository, not the upload ZIP.
-
-Read the [GNOME extension review guidelines](https://gjs.guide/extensions/review-guidelines/review-guidelines.html),
-then sign in at [extensions.gnome.org/upload/](https://extensions.gnome.org/upload/)
-and upload the generated `.shell-extension.zip`. GNOME assigns the extension
-version during publication.
-
-This project was developed with AI assistance. The guidelines require the
-submitter to understand and be able to explain the code; passing local checks
-does not guarantee review approval.
-
 ## Issues and contributions
 
 [Report a problem or suggest an improvement](https://github.com/sunshinedaniel/gnome-display-scaling/issues).
